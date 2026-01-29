@@ -1,0 +1,20 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/auth/error/page": "/auth/error",
+  "/auth/login/page": "/auth/login",
+  "/auth/sign-up-success/page": "/auth/sign-up-success",
+  "/auth/sign-up/page": "/auth/sign-up",
+  "/contact/page": "/contact",
+  "/page": "/",
+  "/resources/page": "/resources",
+  "/student/activities/page": "/student/activities",
+  "/student/bookmarks/page": "/student/bookmarks",
+  "/student/chat/page": "/student/chat",
+  "/student/dashboard/page": "/student/dashboard",
+  "/student/past-papers/page": "/student/past-papers",
+  "/teacher/dashboard/page": "/teacher/dashboard",
+  "/teacher/messages/page": "/teacher/messages",
+  "/teacher/upload/page": "/teacher/upload"
+}
