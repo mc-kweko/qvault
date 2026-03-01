@@ -24,14 +24,14 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200/50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-white font-bold text-lg">
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
             Q
           </div>
-          <span className="text-xl font-semibold text-slate-900 tracking-tight">
+          <span className="text-xl font-semibold text-foreground tracking-tight">
             Q&apos;Vault
           </span>
         </Link>
@@ -40,18 +40,18 @@ export function Header() {
         <div className="hidden lg:flex lg:items-center lg:gap-8">
           <Link 
             href="/" 
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Home
           </Link>
           <Link 
             href="/about" 
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             About
           </Link>
           <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+            <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Resources
               <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
@@ -65,7 +65,7 @@ export function Header() {
           </DropdownMenu>
           <Link 
             href="/contact" 
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           >
             Contact
           </Link>
@@ -73,18 +73,18 @@ export function Header() {
 
         {/* Desktop Actions */}
         <div className="hidden lg:flex lg:items-center lg:gap-3">
-          <Button variant="ghost" size="icon" className="text-slate-600 hover:text-slate-900">
+          <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-foreground">
             <Search className="h-5 w-5" />
             <span className="sr-only">Search</span>
           </Button>
           <ThemeToggle />
           <Link href="/auth/login">
-            <Button variant="ghost" className="text-slate-600 hover:text-slate-900">
+            <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               Sign In
             </Button>
           </Link>
           <Link href="/auth/sign-up">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">Get Started</Button>
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Get Started</Button>
           </Link>
         </div>
 
