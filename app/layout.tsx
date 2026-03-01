@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     generator: 'v0.app'
 }
 
-export const viewport: Metadata['viewport'] = {
+export const viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: '#0369a1',
