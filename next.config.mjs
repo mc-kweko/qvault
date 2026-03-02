@@ -3,13 +3,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack: (config, { dev }) => {
+  webpack: (config, { dev, isServer }) => {
+    // Disable webpack cache in development to avoid serialization warnings
     if (dev) {
-      config.cache = {
-        type: 'filesystem',
-        compression: false,
-        maxMemoryGenerations: 1,
-      }
+      config.cache = false
     }
     return config
   },
