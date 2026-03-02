@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://qvault.vercel.app'),
   title: "Q'Vault - Uganda's New Lower Secondary Curriculum Resource",
   description: "Access Activities of Integration, past papers, and educational resources for Ugandan students. Sciences, Humanities, Languages - all aligned with the new curriculum.",
   keywords: ["Uganda education", "NLSC", "Activities of Integration", "UCE past papers", "Ugandan curriculum"],
